@@ -1,4 +1,9 @@
 package capter11;
 
-public class Line {
+public class Line implements  Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Hello");
+
+    }
 }
