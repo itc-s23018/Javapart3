@@ -5,18 +5,22 @@ import java.util.Scanner;
 
 public class PredExample {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
 
-        Predicate<Integer> pred = n -> n >= 18;
-        boolean result = pred(N, pred);
+//        Scanner sc = new Scanner(System.in);
+//        int N = sc.nextInt();
 
-        System.out.println(result);
+        Predicate<Integer> pr = i -> (i>=18);
+        System.out.println(pr.test(20));
+
+
+//        boolean result = pred(N, (i) -> (i >= 18));
+//
+//        System.out.println(result);
 
     }
 
-    public static boolean pred(int number, Predicate<Integer> pr){
-        return pr.test(number);
-
-    }
+//    public static boolean pred(int number, Predicate<Integer> pr){
+//        return pr.test(number);
+//
+//    }
 }
